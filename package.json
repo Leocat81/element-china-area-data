@@ -1,15 +1,15 @@
 {
-  "name": "element-china-area-data-pipe",
+  "name": "element-china-area-data-insure",
   "private": false,
-  "version": "1.4.0",
-  "main": "./dist/element-china-area-data-pipe.cjs",
-  "module": "./dist/element-china-area-data-pipe.mjs",
-  "types": "./dist/element-china-area-data-pipe.d.ts",
+  "version": "1.0.0",
+  "main": "./dist/element-china-area-data-insure.cjs",
+  "module": "./dist/element-china-area-data-insure.mjs",
+  "types": "./dist/element-china-area-data-insure.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/element-china-area-data-pipe.cjs",
-      "import": "./dist/element-china-area-data-pipe.mjs",
-      "types": "./dist/element-china-area-data-pipe.d.ts"
+      "require": "./dist/element-china-area-data-insure.cjs",
+      "import": "./dist/element-china-area-data-insure.mjs",
+      "types": "./dist/element-china-area-data-insure.d.ts"
     }
   },
   "repository": {
