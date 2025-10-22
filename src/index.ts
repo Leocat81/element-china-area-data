@@ -3,6 +3,16 @@ import pcaC from "china-division/dist/pca-code.json";
 import pc from "china-division/dist/pc.json";
 import pca from "china-division/dist/pca.json";
 
+pcC[11].children.push({
+  code: "3419",
+  name: "巢湖市",
+});
+pcaC[11].children.push({
+  code: "3419",
+  name: "巢湖市",
+  children: [],
+});
+pcaC[11].children[0].children.pop();
 interface DataItem {
   value: string;
   label: string;
