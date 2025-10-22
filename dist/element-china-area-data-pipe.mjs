@@ -1,4 +1,4 @@
-const r = [
+const l = [
   {
     code: "11",
     name: "北京市",
@@ -1989,7 +1989,7 @@ const r = [
       }
     ]
   }
-], m = [
+], d = [
   {
     code: "11",
     name: "北京市",
@@ -20769,18 +20769,29 @@ const r = [
       "白杨市"
     ]
   }
-}, a = (c) => c.map((e) => {
-  const n = e.children ? a(e.children) : void 0;
+};
+l[11].children.push({
+  code: "3419",
+  name: "巢湖市"
+});
+d[11].children.push({
+  code: "3419",
+  name: "巢湖市",
+  children: []
+});
+d[11].children[0].children.pop();
+const o = (c) => c.map((e) => {
+  const n = e.children ? o(e.children) : void 0;
   return {
     value: e.code,
     label: e.name,
     children: n
   };
-}), t = a(r), s = a(m), d = {};
-m.forEach((c) => {
-  d[c.code] = c.name, c.children.forEach((e) => {
-    d[e.code] = e.name, e.children.forEach((n) => {
-      d[n.code] = n.name;
+}), t = o(l), s = o(d), a = {};
+d.forEach((c) => {
+  a[c.code] = c.name, c.children.forEach((e) => {
+    a[e.code] = e.name, e.children.forEach((n) => {
+      a[n.code] = n.name;
     });
   });
 });
@@ -20791,24 +20802,24 @@ const p = Object.entries(h).map(([c, e]) => ({
     label: n,
     value: n
   }))
-})), b = Object.entries(i).map(
+})), u = Object.entries(i).map(
   ([c, e]) => ({
     label: c,
     value: c,
-    children: Object.entries(e).map(([n, l]) => ({
+    children: Object.entries(e).map(([n, r]) => ({
       label: n,
       value: n,
-      children: l.map((o) => ({
-        label: o,
-        value: o
+      children: r.map((m) => ({
+        label: m,
+        value: m
       }))
     }))
   })
 );
 export {
-  d as codeToText,
+  a as codeToText,
   p as pcTextArr,
-  b as pcaTextArr,
+  u as pcaTextArr,
   t as provinceAndCityData,
   s as regionData
 };
