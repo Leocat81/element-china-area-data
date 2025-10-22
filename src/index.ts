@@ -7,10 +7,11 @@ pcC[11].children.push({
   code: "3419",
   name: "巢湖市",
 });
-pcaC[11].children.push({
+// 不校验children是否为数组
+(pcaC[11].children as any).push({
   code: "3419",
   name: "巢湖市",
-  children: [],
+  children: undefined,
 });
 pcaC[11].children[0].children.pop();
 interface DataItem {
