@@ -1,7 +1,7 @@
 {
   "name": "element-china-area-data-insure",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.2.1",
   "main": "./dist/element-china-area-data-insure.cjs",
   "module": "./dist/element-china-area-data-insure.mjs",
   "types": "./dist/element-china-area-data-insure.d.ts",

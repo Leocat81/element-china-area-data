@@ -41,9 +41,10 @@ pcaC.forEach(province => {
   codeToText[province.code] = province.name;
   province.children.forEach(city => {
     codeToText[city.code] = city.name;
-    city.children.forEach(area => {
-      codeToText[area.code] = area.name;
-    });
+    city.children &&
+      city.children.forEach(area => {
+        codeToText[area.code] = area.name;
+      });
   });
 });
 
@@ -70,5 +71,4 @@ const pcaTextArr: DataItem[] = Object.entries(pca).map(
     })),
   })
 );
-
 export { provinceAndCityData, pcTextArr, regionData, pcaTextArr, codeToText };

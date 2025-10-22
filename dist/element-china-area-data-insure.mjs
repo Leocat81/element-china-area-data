@@ -20790,7 +20790,7 @@ const o = (c) => c.map((e) => {
 }), t = o(l), s = o(d), a = {};
 d.forEach((c) => {
   a[c.code] = c.name, c.children.forEach((e) => {
-    a[e.code] = e.name, e.children.forEach((n) => {
+    a[e.code] = e.name, e.children && e.children.forEach((n) => {
       a[n.code] = n.name;
     });
   });
