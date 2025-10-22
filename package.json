@@ -1,7 +1,7 @@
 {
   "name": "element-china-area-data-pipe",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.4.0",
   "main": "./dist/element-china-area-data-pipe.cjs",
   "module": "./dist/element-china-area-data-pipe.mjs",
   "types": "./dist/element-china-area-data-pipe.d.ts",
